@@ -15,14 +15,13 @@
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
       <a-entity mindar-image-target="targetIndex: 0">
         <a-plane src="#card" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
-       <a-gltf-model 
-  rotation="1.5 0 0" 
-  position="0 0 0.8" 
-  scale="0.6 0.6 0.6" 
-  src="#avatarModel"
-  animation="property: position; dir: alternate; dur: 3000; easing: easeInOutSine; loop: true; to: 0 0.2 0.8">
-</a-gltf-model>
-
+        <a-gltf-model 
+          src="#avatarModel"
+          position="0 0 0.8"
+          rotation="0 0 0" 
+          scale="0.6 0.6 0.6"
+          animation__float="property: position; from: 0 0 0.8; to: 0 0.2 0.8; dir: alternate; dur: 3000; easing: easeInOutSine; loop: true">
+        </a-gltf-model>
 
         
       </a-entity>
